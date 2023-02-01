@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+section {
+    margin: 30px 0;
+}
+h1, h2, h3 {
+    text-transform: capitalize;
+}
+h2 {
+    margin-bottom: 10px;
+}
+.debs-menu {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
+
+.menu-item:hover {
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: 600;
+}
+.container {
+    width: 100%;
+    display: flex;
+
+}
+
+form, .order {
+    width: 50%;
+}
+label {
+    text-transform: capitalize;
+}
+.select-box {
+    width: 60%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.select-box:hover label {
+    font-weight: 600;
+}
+.order-total {
+    display: flex;
+    justify-content: space-between;
+}
+select {
+    padding: 5px 10px;
+    width: 60%;
+}
+th {
+    text-align: left;
+}
+.total-bill{
+    font-weight: 600;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+@media only screen and (max-width:767px){
+    .debs-menu {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        flex-direction: column;
+    }
+    form, .order, .select-box, select {
+        width: 100%;
+    }
+    
+}
